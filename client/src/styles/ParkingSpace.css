@@ -1,0 +1,124 @@
+/* General Body Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #121212; /* Dark background for better contrast */
+    margin: 0;
+    padding: 0;
+    color: #f4f4f4; /* Light text for contrast */
+}
+
+/* Container Styles */
+.container {
+    width: 90%; /* Wider container for larger screens */
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+/* Header Styles */
+h1 {
+    color: #fff; /* White for title */
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2 {
+    color: #fff; /* White for section headers */
+    font-size: 1.8em;
+    margin-bottom: 15px;
+}
+
+/* Parking Area Styles */
+.parking-area {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    flex-wrap: wrap; /* Ensure responsive layout */
+}
+
+.parking-type {
+    width: 30%;
+    margin: 0 10px;
+    margin-bottom: 30px;
+    min-width: 280px; /* Prevent elements from shrinking too much */
+}
+
+/* Parking Slots Container */
+.parking-slots {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px; /* Add space between slots */
+}
+
+/* Individual Parking Slot Styles */
+.parking-slot {
+    width: 80px;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px; /* More rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    font-weight: bold;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Available Slot Styles */
+.available {
+    background-color: #5cb85c; /* Green for available */
+}
+
+.reserved {
+    background-color: #d9534f; /* Red for reserved */
+}
+
+/* Hover Effect for Slots */
+.parking-slot:hover {
+    transform: scale(1.1); /* Slightly enlarge the slot on hover */
+    cursor: pointer; /* Show pointer cursor to indicate interactivity */
+}
+
+/* Footer Styling (Optional for Layout Completeness) */
+footer {
+    margin-top: 50px;
+    padding: 20px;
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .parking-area {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parking-type {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        width: 95%; /* Slightly smaller container for small screens */
+    }
+
+    .parking-slot {
+        width: 70px;
+        height: 70px;
+    }
+
+    h1 {
+        font-size: 2em; /* Adjust font size on small screens */
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}

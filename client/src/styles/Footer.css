@@ -1,0 +1,99 @@
+/* Footer Styling */
+.footer {
+    padding: 40px 20px;
+    background: linear-gradient(135deg, #1a202c, #2d3748); /* Gradient background for depth */
+    color: #F7FAFC;  /* Light text color for contrast */
+    font-family: 'Roboto', sans-serif; /* Modern font */
+}
+
+/* Footer Links List */
+.footer ul {
+    padding: 0;
+    list-style: none;
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.8;
+    margin: 20px 0;
+}
+
+.footer li {
+    display: inline-block;
+    padding: 0 12px;
+}
+
+.footer ul a {
+    color: #F7FAFC;  /* Light color for links */
+    text-decoration: none;
+    opacity: 0.8;
+    transition: opacity 0.3s ease, color 0.3s ease;
+}
+
+.footer ul a:hover {
+    opacity: 1;
+    color: #FF5C8D;  /* Accent color on hover */
+}
+
+/* Social Media Section */
+.footer .social {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.footer .social > a {
+    font-size: 26px;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    background-color: #2d3748;
+    border: 2px solid #F7FAFC; /* Subtle border around icons */
+    margin: 0 12px;
+    color: #F7FAFC;
+    opacity: 0.75;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.footer .social > a:hover {
+    opacity: 1;
+    transform: scale(1.1); /* Slight zoom effect on hover */
+    background-color: #FF5C8D; /* Accent color for hover */
+    border-color: #FF5C8D; /* Match border to the hover color */
+}
+
+/* Copyright Text */
+.footer .copyright {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 14px;
+    color: #A0AEC0; /* Slightly muted text color */
+    margin-bottom: 0;
+    letter-spacing: 1px;  /* Adds a bit of spacing for a cleaner look */
+}
+
+/* Divider Line */
+.footer .footer-break {
+    height: 2px;
+    border-width: 0;
+    background-color: #FF5C8D;  /* Accent color for divider */
+    margin: 20px 0;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .footer ul {
+        font-size: 14px;
+    }
+
+    .footer .social > a {
+        font-size: 22px;
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .footer .copyright {
+        font-size: 12px;
+    }
+}

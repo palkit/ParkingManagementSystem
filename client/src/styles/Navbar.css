@@ -1,0 +1,82 @@
+/* Body Styling */
+body {
+  background: #121212;  /* Dark gray background for a modern look */
+  color: #EAEAEA;  /* Light gray text color for better contrast */
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif; /* Clean, modern sans-serif font */
+}
+
+/* Navigation Bar */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Align home and menu items apart */
+  padding: 12px 40px; /* Adjusted padding for a balanced nav */
+  font-size: 1.1em;  /* Slightly smaller font size for elegance */
+  background-color: #1F1F1F;  /* Darker background for navigation bar */
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.3); /* Added shadow for depth */
+  position: sticky;
+  top: 0;
+  z-index: 1000; /* Ensure the nav bar stays on top */
+}
+
+/* Home (Logo or Brand section) */
+.home {
+  font-size: 1.6em;
+  font-weight: bold;
+  color: #FF5C8D;  /* Accent color for logo or brand */
+  letter-spacing: 1px; /* Slight letter spacing for a clean look */
+}
+
+/* Navigation List */
+ul {
+  list-style-type: none;
+  display: flex;
+  margin-left: auto;
+  gap: 30px;
+}
+
+/* Anchor (links) */
+a {
+  text-decoration: none;
+  color: #EAEAEA;  /* Light color for links */
+  transition: color 0.3s ease;  /* Smooth color transition */
+}
+
+/* List Items */
+li {
+  position: relative;
+  border-bottom: 2px solid transparent; /* Transparent border for effect */
+  padding: 5px 0; /* Padding for better spacing */
+  transition: transform 0.3s ease, border-color 0.4s ease;  /* Smooth transition for scaling and border color */
+}
+
+/* Hover Effects for List Items */
+li:hover {
+  transform: scale(1.1);
+  border-color: #FF5C8D;  /* Accent color on hover */
+}
+
+/* Hover Effects for Links */
+li:hover a {
+  color: #FF5C8D;  /* Change link color to accent color on hover */
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column; /* Stack navigation items vertically on smaller screens */
+    padding: 14px 20px; /* Adjust padding */
+  }
+
+  ul {
+    flex-direction: column;  /* Stack list items vertically */
+    gap: 20px; /* Reduce gap for vertical layout */
+    text-align: center;  /* Center text */
+  }
+
+  li {
+    font-size: 1.1em;  /* Adjust font size on smaller screens */
+  }
+}
